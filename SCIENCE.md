@@ -51,3 +51,9 @@ This is not QR Structured Append and does not implement automatic camera sequenc
 URLs are parsed with the browser URL API. Only http/https destinations receive an explicit opening link; no decoded content opens automatically. A domain mentioned in a path is not the host. HTTPS protects transport but does not establish that a site is trustworthy. No URL reputation service is used, and destination preview is not a security certification.
 
 Source: [FTC QR code guidance](https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information).
+
+## ASL discovery: language is more than encoding
+
+The optional mini-lesson introduces ASL fingerspelling using real educator references. ASL has its own grammar and community history; it is not a universal secret code, and spelling an English sentence is not the same as translating it into ASL. Still charts cannot fully teach motion, so a real demonstration accompanies the chart. The closing invitation is original written English, not a claim to have generated an ASL translation. Learn further with Deaf educators.
+
+Sources: [NIDCD introduction](https://www.nidcd.nih.gov/health/american-sign-language), [ASL University alphabet](https://www.lifeprint.com/asl101/fingerspelling/abc.htm), [Gallaudet ASL](https://gallaudet.edu/asl/). Media permissions are in THIRD-PARTY.md.

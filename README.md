@@ -2,7 +2,7 @@
 
 An Everyday Cool workshop by Steven Powell. Make real QR codes, investigate information, and share an invented secret. Free, portable, and built for curious kids and adults.
 
-[Open project on GitHub](https://github.com/caeled/secret-squares) · [Download the complete ZIP](https://github.com/caeled/secret-squares/archive/refs/heads/main.zip)
+[Open the workshop](https://caeled.github.io/secret-squares/) · [Open project on GitHub](https://github.com/caeled/secret-squares) · [Download the complete ZIP](https://github.com/caeled/secret-squares/archive/refs/heads/main.zip)
 
 ## Start
 
@@ -19,11 +19,13 @@ Cryptography and packet checksums need Web Crypto. Modern browsers may allow it 
 5. **Secret messages:** AES-256-GCM with fresh random nonces and random shared keys; hybrid RSA-OAEP/SHA-256 public-key experiments. Export/import receiving keys to try two devices. Public QR codes never include private/shared secret keys.
 6. **Transfer station:** custom numbered text packets with a whole-message SHA-256 checksum, reverse ordering, duplicate handling, and missing-piece detection. Not QR Structured Append.
 7. **Field missions:** nine experiments and a downloadable printable treasure-hunt sheet.
-8. **Go deeper:** primary sources, portable guide, scientific notes, and licensing.
+8. **Go deeper:** primary sources, portable guide, scientific notes, and an ASL fingerspelling introduction with real hand-position references and a real signing demonstration. ASL is a language with its own grammar; fingerspelling is one part of it.
 
 ## Compatibility
 
 The QR studio and local jsQR reader work offline. For other phones, scan the generated code at a suitable size with its white border visible. Emoji codes declare UTF-8 with ECI 26; support differs between scanners. Downloads require browser download permissions. Uploaded images are decoded locally and never uploaded to a server. The reader accepts PNG, JPEG, and WebP, up to 8 MB; crop unusually large images first.
+
+**ASL discovery:** the original mini-lesson works offline. Its optional reference chart and video load only after you press their buttons. Online media remains with Lifeprint / ASL University and YouTube. Run **tools/Get-ASL-Reference.ps1** if you want a chart saved for personal-device or classroom use. The chart is copyright William Vicars and is not covered by our free code/content licenses; review its permission terms before redistribution. No AI-generated signing is used.
 
 Web Crypto requires browser support and a secure context. Gzip requires CompressionStream. If either is unavailable, that bench reports the limitation; other benches remain available. The modern JavaScript QR build targets current browsers. No camera permission is requested: scanning here uses image uploads or the generated canvas.
 
