@@ -22,4 +22,9 @@ js=(root/'assets/app.js').read_text(encoding='utf-8')
 for id in re.findall(r"\$\('([^']+)'\)",js): assert id in c.ids, id
 assert '@import' not in (root/'assets/style.css').read_text(encoding='utf-8')
 assert 'fetch(' not in js and 'localStorage' not in js
+asl=Check(); asl.feed((root/'workshop-asl.html').read_text(encoding='utf-8'))
+assert len(asl.ids)==len(set(asl.ids)), 'Duplicate ASL IDs'
+for link in asl.links:
+    if not re.match(r'^[a-z]+:',link): assert (root/link.split('#')[0]).is_file(), link
+for id in re.findall(r"getElementById\('([^']+)'\)",(root/'assets/asl.js').read_text(encoding='utf-8')): assert id in asl.ids, id
 print(f'Package verified: {len(c.ids)} unique IDs, {len(c.links)} links/assets, matching labels and script controls.')
